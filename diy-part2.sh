@@ -14,6 +14,6 @@
 
 # WDR4300V1 Config
 #sed -i 's/192.168.1.1/192.168.50.5/g' package/base-files/files/bin/config_generate
-sed -i s/'23552k(ubi),25600k@0x6c0000(firmware)'/'120832k(ubi),122880k@0x6c0000(firmware)'/ target/linux/ath79/image/legacy.mk
+#sed -i s/'23552k(ubi),25600k@0x6c0000(firmware)'/'120832k(ubi),122880k@0x6c0000(firmware)'/ target/linux/ath79/image/legacy.mk
 sed -i s/'luci-theme-bootstrap'/'luci-theme-argon'/ feeds/luci/collections/luci/Makefile
 sed -i s/"timezone='UTC'"/"timezone='Asia\/Shanghai'"/  package/base-files/files/bin/config_generate
